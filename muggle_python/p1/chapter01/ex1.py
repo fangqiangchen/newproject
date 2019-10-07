@@ -1,7 +1,2 @@
-# 创建数据
-
-# 使用数据
-
-# 修改数据
-
-# 删除数据
+result = "they" + float.__name__
+print(result)
