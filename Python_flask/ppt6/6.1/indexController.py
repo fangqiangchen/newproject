@@ -51,4 +51,5 @@ def json():
     import json
     data = {"a":"b"}
     response = make_response(json.dumps( data))
+    response.headers["Content-Type"] = "application/json"
     return response
