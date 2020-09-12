@@ -1,4 +1,4 @@
-from flask import Flask,Blueprint,request,make_response,jsonify,render_template
+from flask import Flask,Blueprint,request
 app = Flask( __name__ )
 
 index_page = Blueprint( "index_page",__name__ )
@@ -35,31 +35,5 @@ def post():
 
 @index_page.route("/upload",methods = [" POST "])
 def upload():
-    f = request.files['file'] if "file" in request.files else None
+    f = request.files['file']
     return "request:%s,params:%s,file:%s"%(request.method,request.files,f)
-
-@index_page.route("/text")
-def text():
-    return " text/html"
-@index_page.route("/text_same")
-def text_same():
-    response = make_response( 'text/html',200)
-    return response
-
-@index_page.route("/json")
-def json():
-    import json
-    data = {"a":"b"}
-    response = make_response(json.dumps( data))
-    response.headers["Content-Type"] = "application/json"
-    return response
-
-@index_page.route( "/json_same")
-def json_same():
-    data = { "a":"b"}
-    response = make_response( jsonify( data))
-    return response
-
-@index_page.route("/template")
-def template():
-    return render_template( "index.html" )
