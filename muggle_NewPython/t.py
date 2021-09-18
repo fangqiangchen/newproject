@@ -9,6 +9,8 @@ from httpx import Response
 from dataclasses import dataclass
 from functools import cached_property
 
+os.environ["APP_KEY"] = "2402e28def14849b"
+os.environ["APP_SECRET"] = "r6MzkjgYV5aIVlVosycGi0M7y6czlSCx"
 
 
 class Signer:
@@ -164,3 +166,5 @@ res = y.translate("hello")
 
 pprint(res["basic"]["explains"])
 pprint(res.err)
+
+pprint(res.raw)
