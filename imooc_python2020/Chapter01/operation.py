@@ -28,3 +28,11 @@ gb = 1
 b = gb * 1024 * 1024 * 1024
 
 print(b)
+
+list_01 = [1,2,3]
+print(list_01 * 2)
+
+tuple_01 = (1,2,3)
+print(tuple_01 * 2)
+
+
