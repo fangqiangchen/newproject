@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/flask/helloflask" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/git_practice" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/git_practice/git_practice" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/helloflask" vcs="Git" />
   </component>
 </project>
