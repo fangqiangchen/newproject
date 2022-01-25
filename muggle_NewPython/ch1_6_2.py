@@ -5,6 +5,7 @@ import pprint
 os.environ["YOUDAO_AI_KEY"] = "2402e28def14849b"
 os.environ["YOUDAO_AI_SECRET"] = "r6MzkjgYV5aIVlVosycGi0M7y6czlSCx"
 
+
 word = ' scissor '
 res = urge.translate(word,full=True).once()
 pprint.pprint(res)
