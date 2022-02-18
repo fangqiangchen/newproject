@@ -7,9 +7,13 @@ os.environ["YOUDAO_AI_SECRET"] = "r6MzkjgYV5aIVlVosycGi0M7y6czlSCx"
 
 sentence = "hello world again"
 words = sentence.split()
-for word in words:
-    result = urge.translate(word).once()
-    print("---" * 15)
-    print(word)
-    for single in result:
-        print(single)
+for w in words:
+    print('----'*10)
+    result = urge.translate(w).once()
+    print(w.capitalize())
+    print('----'*10)
+    for m in result:
+        print(m)
+
+
+
